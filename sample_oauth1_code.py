@@ -9,11 +9,11 @@ import json
 # Don't fill in a callback_url and put in a placeholder for the website
 # Visit the Keys and Access Tokens tab for your app and grab the following two values
 
-client_key = "" # what Twitter calls Consumer Key
-client_secret = "" # What Twitter calls Consumer Secret
+client_key = "zqCfh9OarJvC3hZ7NUCRDJg2Z" # what Twitter calls Consumer Key
+client_secret = "iJPArRfcxhYdm4XcxoI512DeQ5b7LfKlbKcxYRArIYKgwocY2h" # What Twitter calls Consumer Secret
 
-if not client_secret or not client_key:
-    print("You need to fill in client_key and client_secret. See comments in the code around line 8-14")
+if not client_secret or not client_key: #this is a test comment
+    print("You need to fill in client_key and client_secret. See comments in the code around line 8-14") #this is a test comment
     exit()
 
 
@@ -220,3 +220,12 @@ fr.close()
 
 # Now, can investigate using this data that you got.
 # If you're testing with the data in the file only, you may want to comment out all the code above this for a while so you don't inadvertently make a lot of requests to Twitter and then run out of request privileges for the day!
+
+
+#to add later
+#def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
+#    alphabetized_keys = sorted(params_d.keys())
+#    res = []
+#        if k not in private_keys:
+#            res.append("{}-{}".format(k, params_d[k]))
+#    return baseurl + "_".join(res)
